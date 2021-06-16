@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_conatct_manager,contact.manager,odoo_contact.model_contact,group_contact_manager,1,1,1,1
+access_xml_contact_wizard_manager,xml.wizard.contact.manager,odoo_contact.model_xml_contact_wizard,group_contact_manager,1,1,1,1
+
+
+

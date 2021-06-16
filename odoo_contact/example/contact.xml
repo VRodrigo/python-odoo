@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<data>
+    <contact>
+        <firstname>Firstname</firstname>
+        <lastname>Lastname</lastname>
+        <address>Test address 34</address>
+        <email>test@testmail.com</email>
+        <phone>+41 (0)66 552 01 20</phone>
+    </contact>
+</data>

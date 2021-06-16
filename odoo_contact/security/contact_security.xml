@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+    <record model="ir.module.category" id="module_category_contact">
+        <field name="name">Contact</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="group_contact_manager" model="res.groups">
+        <field name="name">Contact Manager</field>
+        <field name="category_id" ref="module_category_contact" />
+        <field name="users" eval="[(4, ref('base.user_root'))]" />
+    </record>
+
+    </data>
+</odoo>

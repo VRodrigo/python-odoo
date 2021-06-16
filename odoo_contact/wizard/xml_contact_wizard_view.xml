@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="xml_contact_wizard_view_form" model="ir.ui.view">
+        <field name="name">XML contact wizard</field>
+        <field name="model">xml.contact.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="xml_file"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button
+                        name="load_xml"
+                        type="object"
+                        string="Upload"
+                        class="oe_highlight"
+                    />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="xml_contact_wizard_action" model="ir.actions.act_window">
+        <field name="name">XML contact wizard</field>
+        <field name="res_model">xml.contact.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="xml_contacts_wizard_menu" name="Upload contacts"
+            parent="contacts_main_menu"
+            action="xml_contact_wizard_action"/>
+</odoo>
